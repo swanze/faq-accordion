@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(250, 238, 255);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+.comp {
+  background-color: white;
+  width: 40%;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.inner {
+  padding: 20px;
+}
+.headline {
+  display: flex;
+  gap: 5%;
+  height: 100%;
+  align-items: center;
+}
+.acc-q {
+  display: flex;
+  justify-content: space-between;
+}
+.acc-a {
+  display: none;
+}
+/* text items */
+h1{
+    font-weight: 700;
+}
+.qs-a {
+  text-decoration: none;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+}
+.qs-a:hover{
+    color: rgb(163,52,217);
+}
+.acc-a p{
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
+/*responsiveness*/
+@media screen and (max-width: 600px) {
+    .comp{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width:600px) {
+    .comp{
+        width: 70%;
+    }
+}
